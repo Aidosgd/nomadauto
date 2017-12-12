@@ -1,9 +1,14 @@
 
 // Fonts
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import "fonts/Roboto";
+@import "~font-awesome/scss/font-awesome";
 
 // Variables
 @import "variables";
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+// Slick
+@import "~slick-carousel/slick/slick";
+
+@import "main/main";

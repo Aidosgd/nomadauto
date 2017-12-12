@@ -19,6 +19,7 @@ window._ = require('lodash');
 
 window.$ = window.jQuery = require('jquery');
 require('bootstrap-sass');
+require('slick-carousel');
 
 /**
  * Vue is a modern JavaScript library for building interactive web interfaces

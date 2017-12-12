@@ -16,7 +16,9 @@ mix.webpackConfig({
 mix
     .js('resources/assets/js/app.js', 'public/js/app.js')
     .sass('resources/assets/sass/app.scss', 'public/css/app.css')
-    .browserSync('ibec_cms.dev');
+    .copy('resources/assets/images', 'public/css/images/')
+    .copy('resources/assets/fonts', 'public/fonts/')
+    .browserSync('nomadauto.dev');
 
 if(process.env.NODE_ENV == 'production')
     mix.version();

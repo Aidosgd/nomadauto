@@ -1,0 +1,51 @@
+body{
+  background: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn-blue{
+  border-radius: 10px;
+  background-color: #1091d2;
+  box-shadow: 0 5px 18px 0 rgba(40, 61, 99, 0.35);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: left;
+  color: #ffffff;
+  padding: 11px 40px;
+  &:hover, &:active, &:focus{
+    color: white;
+  }
+}
+
+h1{
+  font-size: 48px;
+  font-weight: 500;
+  color: #1f1f1f;
+  text-align: center;
+  margin-bottom: 11px;
+  margin-top: 60px;
+}
+
+h3{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.33;
+  text-align: left;
+  color: #1f1f1f;
+}
+
+h5{
+  width: 947.9px;
+  margin: auto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.44;
+  text-align: center;
+  color: #1f1f1f;
+  margin-bottom: 36px;
+}
+
+@import "parts/header";
+@import "parts/mainslider";
+@import "page/home";
