@@ -26,6 +26,8 @@
 
     @yield('content')
 
+    @include('parts.footer')
+
     <!-- Scripts -->
     <script src="/js/app.js"></script>
     @yield('scripts')

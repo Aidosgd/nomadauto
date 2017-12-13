@@ -27,9 +27,9 @@
                     <li><a href="/">О компании</a></li>
                     <li><a href="/">Услуги</a></li>
                     <li><a href="/">Техника и оборудование</a></li>
-                    <li><a href="/">Контроль и качества</a></li>
+                    <li><a href="/control">Контроль и качества</a></li>
                     <li><a href="/">Сертификаты</a></li>
-                    <li><a href="/">Контакты</a></li>
+                    <li><a href="/contacts">Контакты</a></li>
                 </ul>
             </div>
         </div>

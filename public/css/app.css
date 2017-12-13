@@ -11633,12 +11633,27 @@ h1 {
   margin-top: 60px;
 }
 
+h2 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.56;
+  text-align: left;
+  color: #1f1f1f;
+}
+
 h3 {
   font-size: 24px;
   font-weight: 500;
   line-height: 1.33;
   text-align: left;
   color: #1f1f1f;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  color: #000000;
 }
 
 h5 {
@@ -11650,6 +11665,20 @@ h5 {
   text-align: center;
   color: #1f1f1f;
   margin-bottom: 36px;
+}
+
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.breadcrumb li a {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 3.13;
+  text-align: left;
+  color: #1f1f1f;
 }
 
 header .navbar-default {
@@ -11696,6 +11725,44 @@ header .navbar-top li a.search:before {
 
 header .navbar-bottom li a {
   padding: 17px 0 0  20px;
+}
+
+footer {
+  background-color: #f3f8fb;
+  box-shadow: inset 0 5px 18px 0 rgba(40, 61, 99, 0.16);
+  padding: 30px;
+}
+
+footer .container {
+  width: 1000px;
+}
+
+footer h4 {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: left;
+  color: #1f1f1f;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: left;
+  color: #1f1f1f;
+}
+
+footer .copyright {
+  border-top: solid 1px #979797;
+  padding-top: 30px;
+  margin-top: 20px;
+}
+
+footer .copyright p {
+  font-size: 14px;
+  text-align: left;
+  color: #969696;
 }
 
 .main-slider {
@@ -11826,6 +11893,7 @@ header .navbar-bottom li a {
 
 .rental_of_special_equipment {
   background-color: #f3f8fb;
+  padding-bottom: 70px;
 }
 
 .rental_of_special_equipment .main_row {
@@ -11834,6 +11902,7 @@ header .navbar-bottom li a {
 
 .rental_of_special_equipment .block {
   background: white;
+  box-shadow: 0 5px 18px 0 rgba(40, 61, 99, 0.16);
 }
 
 .rental_of_special_equipment .block p {
@@ -11847,8 +11916,10 @@ header .navbar-bottom li a {
 .rental_of_special_equipment .block.orange {
   background: #f8651d;
   padding: 20px;
+  height: 273px;
 }
 
+.rental_of_special_equipment .block.orange h3,
 .rental_of_special_equipment .block.orange p {
   color: #ffffff;
 }
@@ -11877,6 +11948,90 @@ header .navbar-bottom li a {
   z-index: 900;
 }
 
+.rental_of_special_equipment .tree {
+  height: 273px;
+  position: relative;
+}
+
+.rental_of_special_equipment .tree p {
+  width: 120px;
+  position: relative;
+  z-index: 1000;
+}
+
+.rental_of_special_equipment .tree .img {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 900;
+  width: 120px;
+  padding-bottom: 5px;
+}
+
+.rental_of_special_equipment .tree .img img {
+  z-index: 1000;
+  width: 100%;
+  position: relative;
+}
+
+.rental_of_special_equipment .tree .img:before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  width: 130px;
+  height: 130px;
+  background-color: #c9e7f0;
+  border-radius: 200px;
+  z-index: 900;
+}
+
+.rental_of_special_equipment .clock {
+  margin-top: 30px;
+  height: 288px;
+}
+
+.rental_of_special_equipment .clock h3,
+.rental_of_special_equipment .clock p {
+  width: 380px;
+}
+
+.rental_of_special_equipment .clock h3 {
+  text-transform: uppercase;
+}
+
+.rental_of_special_equipment .clock .btn-blue {
+  margin-top: 30px;
+}
+
+.rental_of_special_equipment .clock .img {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  z-index: 900;
+  width: 240px;
+}
+
+.rental_of_special_equipment .clock .img img {
+  z-index: 1000;
+  position: relative;
+  left: 50px;
+}
+
+.rental_of_special_equipment .clock .img:before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  bottom: -40px;
+  width: 241.8px;
+  height: 210px;
+  background-color: #c9e7f0;
+  border-radius: 200px;
+  z-index: 900;
+}
+
 .rental_of_special_equipment ul {
   box-shadow: inset 0 5px 18px 0 rgba(40, 61, 99, 0.16);
   list-style: none;
@@ -11890,6 +12045,94 @@ header .navbar-bottom li a {
   line-height: 1.5;
   text-align: left;
   color: #1f1f1f;
-  padding: 10px;
+  padding: 15px 10px;
   display: block;
+}
+
+.projects {
+  box-shadow: 0 5px 18px 0 rgba(40, 61, 99, 0.16);
+  padding-bottom: 100px;
+}
+
+.projects .projects-list .projects-item p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: left;
+  color: #000000;
+}
+
+.contacts {
+  padding-bottom: 100px;
+}
+
+.contacts h2 {
+  margin-top: 0;
+}
+
+.contacts .btn-blue {
+  margin-top: 30px;
+}
+
+.contacts .block {
+  margin-top: 50px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 18px 0 rgba(40, 61, 99, 0.16);
+  padding: 25px;
+}
+
+.contacts .block hr {
+  border-color: #1690c9;
+}
+
+.control {
+  padding-bottom: 100px;
+}
+
+.control h2 {
+  margin-top: 0;
+}
+
+.control p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: left;
+  color: #1f1f1f;
+}
+
+.control h3 {
+  margin-top: 50px;
+}
+
+.control ul {
+  list-style: none;
+}
+
+.control ul li {
+  position: relative;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: left;
+  color: #1f1f1f;
+  margin-bottom: 15px;
+}
+
+.control ul li:before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 10px;
+  width: 12px;
+  height: 12px;
+  background-color: #168dce;
+  box-shadow: 0 4px 6px 0 rgba(40, 61, 99, 0.35);
+  border-radius: 6px;
+}
+
+.control img {
+  width: 100%;
+  position: relative;
+  top: -50px;
 }

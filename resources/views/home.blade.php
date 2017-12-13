@@ -106,7 +106,7 @@
                 <div class="right-side col-md-7">
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="block" style="padding: 20px 15px;">
+                            <div class="block tree" style="padding: 20px 15px;">
                                 <h3>Почему выбирают нас</h3>
                                 <p>За годы мы заработали хорошую ...</p>
                                 <div class="img">
@@ -122,8 +122,8 @@
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="block" style="padding: 20px;">
-                                <h3>Основное направление деятельности нашей компании</h3>
+                            <div class="block clock" style="padding: 20px;">
+                                <h3>не хотите тратить время на поиск нужной техники?</h3>
                                 <p>Напишите нам, и наш менеджер подберет технику для Вас!</p>
                                 <a href="/" class="btn btn-blue">Подробнее</a>
                                 <div class="img">
@@ -132,6 +132,39 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects">
+        <div class="container">
+            <h1>Наши проекты</h1>
+            <h5>Чтобы доставить груз по назначенному адресу или добраться вовремя в конкретное место не обойтись без качественных транспортных услуг</h5>
+
+            <div class="projects-list row">
+                <div class="projects-item col-md-4">
+                    <div class="video">
+                        <iframe width="100%" src="https://www.youtube.com/embed/FlsCjmMhFmw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <h4>Экзамен для спецтехники</h4>
+                    <p>Подготовка мероприятий по уборке улиц к предстоящему зимнему сезону.</p>
+                </div>
+
+                <div class="projects-item col-md-4">
+                    <div class="video">
+                        <iframe width="100%" src="https://www.youtube.com/embed/FlsCjmMhFmw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <h4>Экзамен для спецтехники</h4>
+                    <p>Подготовка мероприятий по уборке улиц к предстоящему зимнему сезону.</p>
+                </div>
+
+                <div class="projects-item col-md-4">
+                    <div class="video">
+                        <iframe width="100%" src="https://www.youtube.com/embed/FlsCjmMhFmw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <h4>Экзамен для спецтехники</h4>
+                    <p>Подготовка мероприятий по уборке улиц к предстоящему зимнему сезону.</p>
                 </div>
             </div>
         </div>
