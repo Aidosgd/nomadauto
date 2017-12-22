@@ -15,7 +15,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'My Application',
+    'name' => 'NomadAuto',
 
     /*
     |--------------------------------------------------------------------------
@@ -81,7 +81,7 @@ return [
     */
 
     'locale' => 'ru',
-    'locales' => ['ru', 'en', 'kk'],
+    'locales' => ['ru'],
 
     /*
     |--------------------------------------------------------------------------

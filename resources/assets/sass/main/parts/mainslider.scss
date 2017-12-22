@@ -101,3 +101,26 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .main-slider{
+    margin-bottom: 50px;
+    .slide{
+      padding: 0;
+      height: inherit;
+      .left-side{
+        height: inherit;
+        &:before{
+          top: inherit;
+          transform: none;
+        }
+      }
+      .content{
+        position: relative;
+        left: 0;
+        top: inherit;
+        transform: none;
+      }
+    }
+  }
+}

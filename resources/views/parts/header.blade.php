@@ -20,16 +20,19 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <ul class="nav navbar-nav navbar-right navbar-top">
                     <li><a class="phone" href="/">8 (727) 244 47 77</a></li>
-                    <li><a class="callme" href="/">Позвонить нам</a></li>
-                    <li><a class="search" href="/"><i class="fa fa-search"></i></a></li>
+                    <li><a class="callme hidden-xs" href="/">Позвонить нам</a></li>
+                    <!-- <li><a class="search" href="/"><i class="fa fa-search"></i></a></li> -->
                 </ul>
-                <ul class="nav navbar-nav navbar-right navbar-bottom">
-                    <li><a href="/">О компании</a></li>
-                    <li><a href="/">Услуги</a></li>
-                    <li><a href="/">Техника и оборудование</a></li>
-                    <li><a href="/control">Контроль и качества</a></li>
-                    <li><a href="/">Сертификаты</a></li>
-                    <li><a href="/contacts">Контакты</a></li>
+
+                <ul class="nav navbar-nav navbar-right navbar-bottom" style="display: block">
+                  @foreach($main_menu as $item)
+                        <li>
+                            <a href="{{ $item->link }}"
+                               class="{{ (app()['request']->url() == url('/'.$item->link)) ? 'active' : ''}}">
+                                {{ $item->node->title }}
+                            </a>
+                        </li>
+                    @endforeach
                 </ul>
             </div>
         </div>

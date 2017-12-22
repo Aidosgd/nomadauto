@@ -61,6 +61,10 @@ h5{
   margin-bottom: 36px;
 }
 
+.modal-backdrop{
+    background-color: #fff;
+}
+
 .breadcrumb{
   background: transparent;
   padding: 0;
@@ -75,9 +79,243 @@ h5{
     }
   }
 }
+.innerMenu{
+  padding-left: 0;
+  padding-bottom: 30px;
+  li{
+    display: inline-block;
+    a{
+      padding: 15px 20px;
+      font-size: 24px;
+      font-weight: 500;
+      font-style: normal;
+      text-align: left;
+      color: #5096b8;
+    }
+    &.active{
+      a{
+        color: #1f1f1f;
+      }
+    }
+    &:first-child{
+      a{
+        padding-left: 0;
+      }
+    }
+  }
+}
 @import "parts/header";
 @import "parts/footer";
 @import "parts/mainslider";
+
+.pages{
+  h2{
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.certificates{
+  width: 90%;
+  .certificate{
+    width: 25%;
+    float: left;
+    padding-right: 50px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    .date{
+      font-size: 14px;
+      font-weight: 300;
+      text-align: left;
+      color: #1f1f1f;
+    }
+    h3{
+      font-size: 18px;
+      font-weight: bold;
+      text-align: left;
+      color: #1f1f1f;
+      margin: 0;
+    }
+    .title{
+      font-size: 16px;
+      font-weight: 300;
+      color: #1f1f1f;
+    }
+  }
+  .modal{
+
+  }
+}
+
+
 @import "page/home";
 @import "page/contacts";
 @import "page/control";
+@import "page/about";
+
+.services{
+  .service{
+    background-color: #f3f8fb;
+    min-height: 257px;
+    position: relative;
+    margin-bottom: 80px;
+    .img{
+      position: absolute;
+      left: -60px;
+      top: -17px;
+      img{
+        height: 283px;
+      }
+    }
+    .desc{
+      position: absolute;
+      left: 400px;
+      top: 50%;
+      transform: translateY(-50%);
+      h3{
+        font-size: 24px;
+        font-weight: 500;
+        text-align: left;
+        color: #1f1f1f;
+        margin-bottom: 30px;
+      }
+      ul{
+        list-style: none;
+        padding-left: 15px;
+        margin-right: 50px;
+        max-width: 405px;
+        float: left;
+        li{
+          font-size: 16px;
+          font-weight: 300;
+          color: #1f1f1f;
+          position: relative;
+          padding-bottom: 25px;
+          &:before{
+            content: '';
+            position: absolute;
+            left: -12px;
+            top: 10px;
+            width: 5px;
+            height: 5px;
+            border-radius: 5px;
+            background-color: #168dce;
+          }
+        }
+      }
+    }
+  }
+}
+
+.technics{
+  .technic{
+    background-color: #ffffff;
+    box-shadow: 0 5px 18px 0 rgba(40, 61, 99, 0.16);
+    padding: 55px 50px 40px 380px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    .img{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      &:before{
+        content: '';
+        position: absolute;
+        left: -40px;
+        bottom: -40px;
+        width: 277.9px;
+        height: 279px;
+        background-color: #c9e7f0;
+        border-radius: 270px;
+        z-index: 1000;
+      }
+      img{
+        position: relative;
+        z-index: 2000;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .pages{
+    .container{
+      padding: 0 30px;
+      h1{
+        // padding-left: 15px;
+        margin-top: 10px;
+        text-align: left;
+        font-size: 32px !important;
+      }
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .breadcrumb{
+    // padding: 0 15px;
+  }
+  .innerMenu{
+    // padding: 0 15px;
+    li{
+      display: block;
+      a{
+        font-size: 16px;
+        padding: 0 !important;
+      }
+    }
+  }
+  .services{
+    .service{
+      margin-bottom: inherit;
+      .img{
+        position: relative;
+        left: inherit;
+        top: inherit;
+        padding-top: 15px;
+        img{
+          margin: auto;
+          height: inherit;
+          width: 80%;
+          display: block;
+        }
+      }
+      .desc{
+        position: relative;
+        left: inherit !important;
+        top: inherit;
+        transform: none;
+        padding: 15px;
+        ul{
+          float: none;
+        }
+      }
+    }
+  }
+  .technics{
+    .technic{
+      padding: 15px;
+      .img{
+        position: relative;
+        &:before{
+          bottom: 20px;
+        }
+      }
+    }
+  }
+  .control{
+    img{
+      top: inherit;
+    }
+    h2{
+      font-size: 30px;
+    }
+  }
+  .certificates{
+    width: 100%;
+    .certificate{
+      width: 100%;
+    }
+  }
+}

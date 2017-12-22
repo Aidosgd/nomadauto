@@ -14,6 +14,10 @@
 Auth::routes();
 
 Route::get('/', 'HomeController@index');
+Route::get('/about/{slug?}', 'HomeController@about');
+Route::get('/info-pages/{slug?}', 'HomeController@infoPages');
+Route::get('/technics/{category}', 'HomeController@technics');
+Route::get('/certificates', 'HomeController@certificates');
 
 Route::get('/{page}', function($page){
    return view('pages.'.$page);

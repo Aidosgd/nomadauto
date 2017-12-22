@@ -2,77 +2,29 @@
 
 @section('content')
     <div class="container main-slider">
-        <div class="slide row">
-            <div class="col-md-6 left-side">
-                <div class="content">
-                    <div class="title">Аренда самосвала</div>
-                    <div class="description">самоходная землеройная машина, представляющая собой гусеничный или колёсный трактор</div>
-                    <a href="/" class="btn btn-blue">Подробнее</a>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <img src="/css/images/mainslider1.png" alt="">
-            </div>
-        </div>
-        <div class="slide row">
-            <div class="col-md-6 left-side">
-                <div class="content">
-                    <div class="title">Аренда самосвала2</div>
-                    <div class="description">самоходная землеройная машина, представляющая собой гусеничный или колёсный трактор</div>
-                    <a href="/" class="btn btn-blue">Подробнее</a>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <img src="/css/images/mainslider1.png" alt="">
-            </div>
-        </div>
-        <div class="slide row">
-            <div class="col-md-6 left-side">
-                <div class="content">
-                    <div class="title">Аренда самосвала3</div>
-                    <div class="description">самоходная землеройная машина, представляющая собой гусеничный или колёсный трактор</div>
-                    <a href="/" class="btn btn-blue">Подробнее</a>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <img src="/css/images/mainslider1.png" alt="">
-            </div>
-        </div>
+        @foreach($gallery->images->sortBy('pivot.weight') as $image)
+          <div class="slide row">
+              <div class="col-md-6 left-side">
+                  <div class="content">
+                      <div class="title">{{ $image->node->title }}</div>
+                      <div class="description">{{ strip_tags($image->node->description) }}</div>
+                      <a href="{{ $image->node->url }}" class="btn btn-blue">Подробнее</a>
+                  </div>
+              </div>
+              <div class="col-md-6 hidden-xs">
+                  <img src="{{ $image->path }}" alt="{{ $image->node->title }}">
+              </div>
+          </div>
+        @endforeach
     </div>
-    
+
     <div class="brands">
         <div class="container">
-            <div class="slide">
-                <img src="https://www.eclipse.org/artwork/images/v2/logo-800x188.png" alt="">
-            </div>
-
-            <div class="slide">
-                <img src="https://www.eclipse.org/artwork/images/v2/logo-800x188.png" alt="">
-            </div>
-
-            <div class="slide">
-                <img src="https://www.eclipse.org/artwork/images/v2/logo-800x188.png" alt="">
-            </div>
-
-            <div class="slide">
-                <img src="https://www.eclipse.org/artwork/images/v2/logo-800x188.png" alt="">
-            </div>
-
-            <div class="slide">
-                <img src="https://www.eclipse.org/artwork/images/v2/logo-800x188.png" alt="">
-            </div>
-
-            <div class="slide">
-                <img src="https://www.eclipse.org/artwork/images/v2/logo-800x188.png" alt="">
-            </div>
-
-            <div class="slide">
-                <img src="https://www.eclipse.org/artwork/images/v2/logo-800x188.png" alt="">
-            </div>
-
-            <div class="slide">
-                <img src="https://www.eclipse.org/artwork/images/v2/logo-800x188.png" alt="">
-            </div>
+            @foreach($galleryBrands->images->sortBy('pivot.weight') as $image)
+              <div class="slide">
+                  <img src="{{ $image->path }}">
+              </div>
+            @endforeach
         </div>
     </div>
 
@@ -143,29 +95,19 @@
             <h5>Чтобы доставить груз по назначенному адресу или добраться вовремя в конкретное место не обойтись без качественных транспортных услуг</h5>
 
             <div class="projects-list row">
-                <div class="projects-item col-md-4">
-                    <div class="video">
-                        <iframe width="100%" src="https://www.youtube.com/embed/FlsCjmMhFmw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <h4>Экзамен для спецтехники</h4>
-                    <p>Подготовка мероприятий по уборке улиц к предстоящему зимнему сезону.</p>
-                </div>
-
-                <div class="projects-item col-md-4">
-                    <div class="video">
-                        <iframe width="100%" src="https://www.youtube.com/embed/FlsCjmMhFmw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <h4>Экзамен для спецтехники</h4>
-                    <p>Подготовка мероприятий по уборке улиц к предстоящему зимнему сезону.</p>
-                </div>
-
-                <div class="projects-item col-md-4">
-                    <div class="video">
-                        <iframe width="100%" src="https://www.youtube.com/embed/FlsCjmMhFmw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <h4>Экзамен для спецтехники</h4>
-                    <p>Подготовка мероприятий по уборке улиц к предстоящему зимнему сезону.</p>
-                </div>
+                @foreach($projectsPosts as $item)
+                  <div class="projects-item col-md-4">
+                      <div class="video">
+                        <?php
+                          $url = parse_url(strip_tags($item->node->content));
+                          parse_str($url['query'], $output);
+                        ?>
+                          <iframe width="100%" src="https://www.youtube.com/embed/{{ $output['v'] }}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                      </div>
+                      <h4>{{ $item->node->title }}</h4>
+                      <p>{{ strip_tags($item->node->teaser) }}</p>
+                  </div>
+                @endforeach
             </div>
         </div>
     </div>
@@ -182,7 +124,16 @@
             arrows: false,
             infinite: true,
             slidesToShow: 5,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            responsive: [
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+            ]
         });
     </script>
 @endsection

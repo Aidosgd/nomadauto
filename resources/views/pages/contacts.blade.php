@@ -1,22 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="contacts">
+    <div class="contacts pages">
         <div class="container">
             <div class="row">
                 <ol class="breadcrumb">
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">{{ $post->node->title }}</a></li>
                 </ol>
 
-                <h2>Контакты</h2>
+                <h2>{{ $post->node->title }}</h2>
 
                 <div class="row">
                     <div class="col-md-6">
                         <div id="map" style="width: 100%; height: 400px"></div>
                     </div>
                     <div class="col-md-6">
-                        <p>г. Алматы, ул. Рыскулова 57В;</p>
-                        <p>Тел.: +7 (727) 3-122-133</p>
+                        {!! $post->node->teaser !!}
 
                         <a href="" class="btn btn-blue">Позвонить</a>
                     </div>
@@ -24,40 +23,7 @@
 
                 <div class="clearfix"></div>
 
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="block">
-                            <h4>Подсеваткин Евгений</h4>
-                            <p>"Отдел продаж"</p>
-                            <hr>
-                            <p>+7 (727) 3-122-133, вн. 5235</p>
-                            <p>+7 (777) 736-00-10</p>
-                            <p>podsevatkin.evgeniy@cbc-group.kz</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="block">
-                            <h4>Подсеваткин Евгений</h4>
-                            <p>"Отдел продаж"</p>
-                            <hr>
-                            <p>+7 (727) 3-122-133, вн. 5235</p>
-                            <p>+7 (777) 736-00-10</p>
-                            <p>podsevatkin.evgeniy@cbc-group.kz</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="block">
-                            <h4>Подсеваткин Евгений</h4>
-                            <p>"Отдел продаж"</p>
-                            <hr>
-                            <p>+7 (727) 3-122-133, вн. 5235</p>
-                            <p>+7 (777) 736-00-10</p>
-                            <p>podsevatkin.evgeniy@cbc-group.kz</p>
-                        </div>
-                    </div>
-                </div>
+                {!! $post->node->content !!}
             </div>
         </div>
     </div>

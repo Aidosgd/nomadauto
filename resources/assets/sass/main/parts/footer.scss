@@ -30,3 +30,11 @@ footer{
     }
   }
 }
+
+@media (max-width: 768px) {
+  footer{
+    .container{
+      width: inherit;
+    }
+  }
+}
