@@ -17,7 +17,7 @@
                   @endforeach
                 </ul>
 
-                <h1 class="text-left" style="font-size: 50px; margin-bottom: 30px;">{{ $post->node->title }}</h1>
+                <h1 class="text-left {{ $post->node->slug == 'istoriya' ? 'hidden' : '' }}" style="font-size: 50px; margin-bottom: 30px;">{{ $post->node->title }}</h1>
 
                 {!! $post->node->content !!}
             </div>

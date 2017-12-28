@@ -25,10 +25,14 @@
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right navbar-bottom" style="display: block">
+                  <?php
+                    $url = app()['request']->path();
+                    $segment1 = app()['request']->segment(1);
+                   ?>
                   @foreach($main_menu as $item)
                         <li>
                             <a href="{{ $item->link }}"
-                               class="{{ (app()['request']->url() == url('/'.$item->link)) ? 'active' : ''}}">
+                               class="{{ $segment1 == 'about' ? ($item->link == '/about/istoriya') ? 'active' : '' : ('/'.$url == $item->link) ? 'active' : '' }}">
                                 {{ $item->node->title }}
                             </a>
                         </li>
