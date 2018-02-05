@@ -89,6 +89,66 @@
         </div>
     </div>
 
+    <div class="home-services">
+        <div class="container">
+            <h1>Наши услуги</h1>
+            <h5>Клиентоориентированный подход и строго индивидуальный подход к каждому заказу позволяют нам предлагать клиентам выгодные условия сотрудничества. Мы помогаем подобрать оборудование, отвечающее задачам проекта, доставляем спецтехнику в любой регион Москвы и области в кратчайшие сроки.</h5>
+
+            <div class="home-services__list row">
+                <div class="col-md-3">
+                    <div class="home-services__item">
+                        <img src="/css/images/hs1.png" alt="">
+                        <p>Разработка грунта</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="home-services__item">
+                        <img src="/css/images/hs1.png" alt="">
+                        <p>Разработка грунта</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="home-services__item">
+                        <img src="/css/images/hs1.png" alt="">
+                        <p>Разработка грунта</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="home-services__item">
+                        <img src="/css/images/hs1.png" alt="">
+                        <p>Разработка грунта</p>
+                    </div>
+                </div>
+            </div>
+            <div class="home-services__list row">
+                <div class="col-md-3">
+                    <div class="home-services__item">
+                        <img src="/css/images/hs1.png" alt="">
+                        <p>Разработка грунта</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="home-services__item">
+                        <img src="/css/images/hs1.png" alt="">
+                        <p>Разработка грунта</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="home-services__item">
+                        <img src="/css/images/hs1.png" alt="">
+                        <p>Разработка грунта</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="home-services__item">
+                        <img src="/css/images/hs1.png" alt="">
+                        <p>Разработка грунта</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="projects">
         <div class="container">
             <h1>Наши проекты</h1>
