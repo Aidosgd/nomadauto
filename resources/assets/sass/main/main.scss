@@ -116,7 +116,171 @@ h5{
 }
 
 .home-services{
-  background: ;
+  background: #f3f8fb;
+  padding-bottom: 70px;
+  &__list{
+    margin-bottom: 20px;
+    .col-md-3{
+      padding: 7px;
+    }
+  }
+  &__item{
+    //width: 285px;
+    width: 100%;
+    height: 150px;
+    background: #fff;
+    box-shadow: 0 5px 18px 0 rgba(40, 61, 99, 0.16);
+    position: relative;
+    overflow: hidden;
+    &:before{
+      content: '';
+      position: absolute;
+      left: -20px;
+      bottom: -20px;
+      width: 122.8px;
+      height: 131.8px;
+      background-color: #c9e7f0;
+      border-radius: 120px;
+    }
+    img{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    p{
+      position: absolute;
+      left: 54%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+}
+
+.home-rental{
+  padding-bottom: 70px;
+  &__lists{
+    width: 100%;
+  }
+  &__item{
+    width: 19.7%;
+    //margin: 1.5%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      width: 163.8px;
+      height: 163.8px;
+      background-color: #c9e7f0;
+      border-radius: 160px;
+      z-index: -1;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    img{
+      width: 100%;
+      padding: 30px;
+      margin-top: -20px;
+    }
+    p{
+      width: 122.8px;
+      font-size: 16px;
+      font-weight: 300;
+      margin: auto;
+    }
+  }
+}
+
+.home-four{
+  padding: 80px 0;
+  background: #f3f8fb;
+  .container{
+    //width: 940px;
+  }
+  .w-block{
+    background: white;
+    box-shadow: 0 5px 18px 0 rgba(40, 61, 99, 0.16);
+    text-align: center;
+    padding: 18px;
+    p{
+      font-size: 18px;
+      font-weight: 300;
+    }
+    .number{
+      font-size: 38px;
+      font-weight: bold;
+      line-height: 18px;
+      margin-bottom: 10px;
+    }
+  }
+  .block-left{
+    //width: 400px;
+    & > div.col-md-6, div.col-md-12{
+      padding: 12px;
+    }
+
+    .col-md-12{
+      .w-block{
+        padding: 30px;
+      }
+      p{
+        text-align: left;
+      }
+      .number{
+        margin-top: 20px;
+      }
+    }
+  }
+  .block-right{
+    //width: 540px;
+    //border: 1px solid;
+    margin: 12px 0px;
+    .w-block{
+      h3{
+        margin: 13px 10px;
+        font-weight: bold;
+        padding-left: 12px;
+      }
+      ul{
+        list-style: none;
+        padding: 0 0 0 70px;
+        li{
+          font-size: 16px;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          text-align: left;
+          color: #1f1f1f;
+          position: relative;
+          margin: 25px 0;
+          &:before{
+            content: '';
+            position: absolute;
+            left: -50px;
+            top: 0;
+            background: url("/css/images/check.png") no-repeat center;
+            width: 36px;
+            height: 36px;
+          }
+        }
+      }
+      a{
+        font-size: 16px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        color: #1299d0;
+      }
+    }
+  }
 }
 
 .certificates{
@@ -243,6 +407,18 @@ h5{
 }
 
 @media (max-width: 768px) {
+  h5{
+    width: 100%;
+  }
+  .home-services__list .col-md-3{
+    padding: 15px;
+  }
+  .home-rental{
+    &__item{
+      width: 100%;
+      padding-bottom: 65px;
+    }
+  }
   .pages{
     .container{
       padding: 0 30px;

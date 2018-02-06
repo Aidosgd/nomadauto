@@ -28,63 +28,83 @@
         </div>
     </div>
 
-    <div class="rental_of_special_equipment">
+    <div class="home-four">
         <div class="container">
-            <h1>Аренда спецтехники</h1>
-            <h5>Мы имеем больщой опыт работ в сфере предоставления услуг по сдаче спецтехники в аренду. Наши операторы ответят на интересуюшие Вас вопросы, и помогут подобрать нужную спецтехнику</h5>
-            <div class="row main_row">
-                <div class="left-side col-md-5">
-                    <div class="block" style="padding: 20px 20px 0">
-                        <h3>Аренда автовышки - безопасные высотные работы</h3>
-                        <p>С помощью автовышки любые высотные работы - от ремонта линий электропередач до замены рекламного щита становятся удобными и безопасными</p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="img machine">
-                                    <img src="/css/images/machin.png" alt="">
+            <div class="row">
+                <div class="col-md-5 block-left">
+                    <div class="col-md-6">
+                        <div class="w-block">
+                            <p>Собственный парк</p>
+                            <div class="number">50+</div>
+                            <p>единиц техники</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="w-block">
+                            <p>Опыт работы</p>
+                            <div class="number">5+</div>
+                            <p>лет</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="w-block">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="number">70+</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Штат сотрудников <br> профессионалов</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <a style="margin-top: 50px;" href="/" class="btn btn-blue">Подробнее</a>
-                            </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="col-md-7 block-right">
+                    <div class="w-block">
+                        <h3>Безопасность - всегда!</h3>
                         <ul>
-                            <li><a href="/">Самосвал автомобильный</a></li>
-                            <li><a href="/">Экскаватор</a></li>
-                            <li><a href="/">Бульдозер</a></li>
-                            <li><a href="/">Каток вибрационный</a></li>
+                            <li>Тщательно выполняем все необходимые требования по Технике Безопасности</li>
+                            <li>Ремонтные работы проводят профессиональные и квалифицированные механики-слесари, имеющие все необходимые допуски к работам</li>
+                            <li>Сотрудничаем только с проверенными официальными поставщиками запасных частей и расходных материалов</li>
                         </ul>
+
+                        <a class="btn btn-link" href="">Подробнее</a>
                     </div>
                 </div>
-                <div class="right-side col-md-7">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="block tree" style="padding: 20px 15px;">
-                                <h3>Почему выбирают нас</h3>
-                                <p>За годы мы заработали хорошую ...</p>
-                                <div class="img">
-                                    <img src="/css/images/tree.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="block orange">
-                                <h3>Основное направление деятельности нашей компании</h3>
-                                <p>В настоящее время парк насчитывает около 30 единиц самосвалов марок FAW, HOWO, SHACMAN  и KAMAZ</p>
-                                <p>Ежедневно мы проводим мониторинг технического состояния техники</p>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="block clock" style="padding: 20px;">
-                                <h3>не хотите тратить время на поиск нужной техники?</h3>
-                                <p>Напишите нам, и наш менеджер подберет технику для Вас!</p>
-                                <a href="/" class="btn btn-blue">Подробнее</a>
-                                <div class="img">
-                                    <img src="/css/images/clock.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-rental container">
+        <h1>Аренда спецтехники</h1>
+        <h5>Мы имеем больщой опыт работ в сфере предоставления услуг по сдаче спецтехники в аренду. Наши операторы ответят на интересуюшие Вас вопросы, и помогут подобрать нужную спецтехнику</h5>
+
+        <div class="home-rental__lists">
+            <div class="home-rental__item">
+                <img style="margin-top: -10px;" src="/css/images/hr5.png" alt="">
+                <p>Самосвалы Shacman </p>
+            </div>
+
+            <div class="home-rental__item">
+                <img src="/css/images/hr4.png" alt="">
+                <p>Гусеничные Экскаваторы</p>
+            </div>
+
+            <div class="home-rental__item">
+                <img src="/css/images/hr3.png" alt="">
+                <p>Автогрейдера XCMG 180-215</p>
+            </div>
+
+            <div class="home-rental__item">
+                <img src="/css/images/hr2.png" alt="">
+                <p>Катки XCMG XS162 </p>
+            </div>
+
+            <div class="home-rental__item">
+                <img style="padding: 0;margin-top: 20px;" src="/css/images/hr1.png" alt="">
+                <p>Топливозаправщик Howo</p>
             </div>
         </div>
     </div>
@@ -97,52 +117,52 @@
             <div class="home-services__list row">
                 <div class="col-md-3">
                     <div class="home-services__item">
-                        <img src="/css/images/hs1.png" alt="">
+                        <img src="/css/images/hs8.png" alt="">
                         <p>Разработка грунта</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="home-services__item">
-                        <img src="/css/images/hs1.png" alt="">
-                        <p>Разработка грунта</p>
+                        <img src="/css/images/hs7.png" alt="">
+                        <p>Рытьё котлованов</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="home-services__item">
-                        <img src="/css/images/hs1.png" alt="">
-                        <p>Разработка грунта</p>
+                        <img src="/css/images/hs6.png" alt="">
+                        <p>Рытьё <br> траншей</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="home-services__item">
-                        <img src="/css/images/hs1.png" alt="">
-                        <p>Разработка грунта</p>
+                        <img src="/css/images/hs5.png" alt="">
+                        <p>Вывоз <br> грунта</p>
                     </div>
                 </div>
             </div>
             <div class="home-services__list row">
                 <div class="col-md-3">
                     <div class="home-services__item">
-                        <img src="/css/images/hs1.png" alt="">
-                        <p>Разработка грунта</p>
+                        <img src="/css/images/hs4.png" alt="">
+                        <p>Вывоз снега</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="home-services__item">
+                        <img src="/css/images/hs3.png" alt="">
+                        <p>Планировочные  работы</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="home-services__item">
+                        <img src="/css/images/hs2.png" alt="">
+                        <p>Бурение ямобуром</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="home-services__item">
                         <img src="/css/images/hs1.png" alt="">
-                        <p>Разработка грунта</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="home-services__item">
-                        <img src="/css/images/hs1.png" alt="">
-                        <p>Разработка грунта</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="home-services__item">
-                        <img src="/css/images/hs1.png" alt="">
-                        <p>Разработка грунта</p>
+                        <p>Перевозка песка, гравия</p>
                     </div>
                 </div>
             </div>
