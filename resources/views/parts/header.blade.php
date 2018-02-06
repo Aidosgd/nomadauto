@@ -19,8 +19,8 @@
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <ul class="nav navbar-nav navbar-right navbar-top">
-                    <li><a class="phone" href="/">8 (727) 244 47 77</a></li>
-                    <li><a class="callme hidden-xs" href="/">Позвонить нам</a></li>
+                    <li><a class="phone" href="/">8 (701) 530 41 88</a></li>
+                    <li><a class="callme hidden-xs" href="/">Написать нам</a></li>
                     <!-- <li><a class="search" href="/"><i class="fa fa-search"></i></a></li> -->
                 </ul>
 

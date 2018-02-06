@@ -12091,12 +12091,19 @@ footer .copyright p {
 
 .brands .slide {
   padding: 0 20px;
+  height: 56px;
+  position: relative;
 }
 
 .brands .slide img {
   max-height: 50px;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  width: 100%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .rental_of_special_equipment {

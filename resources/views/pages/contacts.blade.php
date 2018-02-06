@@ -17,7 +17,7 @@
                     <div class="col-md-6">
                         {!! $post->node->teaser !!}
 
-                        <a href="" class="btn btn-blue">Позвонить</a>
+                        {{--<a href="" class="btn btn-blue">Позвонить</a>--}}
                     </div>
                 </div>
 
@@ -38,11 +38,11 @@
 
         function init(){
             myMap = new ymaps.Map("map", {
-                center: [43.287189, 76.921220],
+                center: [47.115575, 51.897794],
                 zoom: 15
             });
 
-            myPlacemark = new ymaps.Placemark([43.287189, 76.921220], {
+            myPlacemark = new ymaps.Placemark([47.115575, 51.897794], {
                 hintContent: 'NomadAuto',
                 balloonContent: 'NomadAuto'
             });

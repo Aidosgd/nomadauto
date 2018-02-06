@@ -3,10 +3,16 @@
   padding: 20px 0;
   .slide{
     padding: 0 20px;
+    height: 56px;
+    position: relative;
     img{
       // width: 100%;
       max-height: 50px;
       filter: grayscale(100%);
+      width: 100%;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 }
