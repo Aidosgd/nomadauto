@@ -1,18 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container main-slider">
+    <div class="container-fluid main-slider">
         @foreach($gallery->images->sortBy('pivot.weight') as $image)
-          <div class="slide row">
-              <div class="col-md-6 left-side">
-                  <div class="content">
-                      <div class="title">{{ $image->node->title }}</div>
-                      <div class="description">{{ strip_tags($image->node->description) }}</div>
-                      <a href="{{ $image->node->url }}" class="btn btn-blue">Подробнее</a>
-                  </div>
-              </div>
-              <div class="col-md-6 hidden-xs">
-                  <img src="{{ $image->path }}" alt="{{ $image->node->title }}">
+          <div class="slide">
+              <img src="{{ $image->path }}" alt="{{ $image->node->title }}">
+              <div class="content">
+                  <div class="title">{{ $image->node->title }}</div>
+                  <div class="description">{{ strip_tags($image->node->description) }}</div>
+                  <a href="{{ $image->node->url }}" class="btn btn-blue">Подробнее</a>
               </div>
           </div>
         @endforeach
@@ -196,7 +192,8 @@
 @section('scripts')
     <script>
         $('.main-slider').slick({
-            dots: true
+            dots: true,
+            arrows: false
         });
 
         $('.brands .container').slick({

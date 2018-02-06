@@ -11695,40 +11695,42 @@ footer .copyright p {
 .main-slider .slide {
   width: 100%;
   display: inline-block;
-  padding: 50px 0;
-  height: 500px;
+  padding: 0;
+  height: 550px;
   margin: 0;
+  position: relative;
 }
 
-.main-slider .slide .left-side {
-  height: 100%;
-}
-
-.main-slider .slide .left-side:before {
+.main-slider .slide:before {
   content: '';
-  background: url("/css/images/group-3.png");
   position: absolute;
   left: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 387px;
-  height: 356px;
+  right: 0;
+  top: 0;
+  bottom: -20px;
+  background: #132a3d;
+  opacity: 0.5;
+  z-index: 1000;
+  display: block;
 }
 
 .main-slider .slide .content {
   position: absolute;
-  left: 45px;
+  left: 0;
+  right: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  width: 1170px;
+  margin: auto;
+  text-align: center;
+  z-index: 2000;
 }
 
 .main-slider .slide .content .title {
   font-size: 48px;
   line-height: 1.04;
-  text-align: left;
-  color: #1f1f1f;
+  color: #fff;
   margin-bottom: 20px;
 }
 
@@ -11736,8 +11738,7 @@ footer .copyright p {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
-  text-align: left;
-  color: #1f1f1f;
+  color: #fff;
   margin-bottom: 26px;
 }
 
@@ -11753,6 +11754,7 @@ footer .copyright p {
   border: 0;
   background: transparent;
   z-index: 1000;
+  display: none;
 }
 
 .main-slider .slick-arrow:before {
@@ -11775,11 +11777,16 @@ footer .copyright p {
 
 .main-slider .slick-dots {
   position: absolute;
-  right: -15px;
-  top: 50%;
+  left: 50%;
+  bottom: 20px;
   list-style: none;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.main-slider .slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
 }
 
 .main-slider .slick-dots li.slick-active button {
@@ -11792,7 +11799,7 @@ footer .copyright p {
 
 .main-slider .slick-dots li button {
   border: none;
-  background-color: #1390cc;
+  background-color: #fff;
   opacity: 0.5;
   font-size: 0;
   width: 7px;
@@ -11934,7 +11941,7 @@ footer .copyright p {
   background: white;
   box-shadow: 0 5px 18px 0 rgba(40, 61, 99, 0.16);
   text-align: center;
-  padding: 18px;
+  padding: 35px 18px;
 }
 
 .home-four .w-block p {
@@ -11943,10 +11950,10 @@ footer .copyright p {
 }
 
 .home-four .w-block .number {
-  font-size: 38px;
+  font-size: 48px;
   font-weight: bold;
   line-height: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .home-four .block-left > div.col-md-6,
@@ -11955,7 +11962,7 @@ footer .copyright p {
 }
 
 .home-four .block-left .col-md-12 .w-block {
-  padding: 30px;
+  padding: 55px 30px;
 }
 
 .home-four .block-left .col-md-12 p {
@@ -11968,6 +11975,10 @@ footer .copyright p {
 
 .home-four .block-right {
   margin: 12px 0px;
+}
+
+.home-four .block-right .w-block {
+  padding: 30px 18px;
 }
 
 .home-four .block-right .w-block h3 {
@@ -12050,7 +12061,7 @@ footer .copyright p {
 
 .brands {
   background-color: #f9fafa;
-  padding: 50px 0;
+  padding: 20px 0;
 }
 
 .brands .slide {

@@ -4,40 +4,43 @@
     width: 100%;
     display: inline-block;
     //border: 1px solid;
-    padding: 50px 0;
-    height: 500px;
+    padding: 0;
+    height: 550px;
     margin: 0;
-    .left-side{
-      height: 100%;
-      &:before{
-        content: '';
-        background: url('/css/images/group-3.png');
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 387px;
-        height: 356px;
-      }
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: -20px;
+      background: #132a3d;
+      opacity: 0.5;
+      z-index: 1000;
+      display: block;
     }
     .content{
       position: absolute;
-      left: 45px;
+      left: 0;
+      right: 0;
       top: 50%;
       transform: translateY(-50%);
+      width: 1170px;
+      margin: auto;
+      text-align: center;
+      z-index: 2000;
       .title{
         font-size: 48px;
         line-height: 1.04;
-        text-align: left;
-        color: #1f1f1f;
+        color: #fff;
         margin-bottom: 20px;
       }
       .description{
         font-size: 16px;
         font-weight: 300;
         line-height: 1.5;
-        text-align: left;
-        color: #1f1f1f;
+        color: #fff;
         margin-bottom: 26px;
       }
     }
@@ -54,6 +57,7 @@
     border: 0;
     background: transparent;
     z-index: 1000;
+    display: none;
     &:before{
       color: #d2d1d7;
     }
@@ -74,11 +78,13 @@
 
   .slick-dots{
     position: absolute;
-    right: -15px;
-    top: 50%;
+    left: 50%;
+    bottom: 20px;
     list-style: none;
-    transform: translateY(-50%);
+    transform: translateX(-50%);
     li{
+      display: inline-block;
+      margin: 0 5px;
       &.slick-active{
         button{
           width: 13px;
@@ -90,7 +96,7 @@
       }
       button{
         border: none;
-        background-color: #1390cc;
+        background-color: #fff;
         opacity: 0.5;
         font-size: 0;
         width: 7px;
