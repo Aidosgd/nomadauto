@@ -8,7 +8,7 @@
               <div class="content">
                   <div class="title">{{ $image->node->title }}</div>
                   <div class="description">{{ strip_tags($image->node->description) }}</div>
-                  <a href="{{ $image->node->url }}" class="btn btn-blue">Подробнее</a>
+                  <a href="{{ $image->node->url }}" class="btn btn-link">Подробнее</a>
               </div>
           </div>
         @endforeach
