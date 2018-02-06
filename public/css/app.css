@@ -11818,14 +11818,8 @@ footer .copyright p {
     height: inherit;
   }
 
-  .main-slider .slide .left-side {
-    height: inherit;
-  }
-
-  .main-slider .slide .left-side:before {
-    top: inherit;
-    -webkit-transform: none;
-            transform: none;
+  .main-slider .slide:before {
+    content: none;
   }
 
   .main-slider .slide .content {
@@ -11834,6 +11828,26 @@ footer .copyright p {
     top: inherit;
     -webkit-transform: none;
             transform: none;
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  .main-slider .slide .content .title {
+    font-size: 28px;
+    color: #000;
+  }
+
+  .main-slider .slide .content .description {
+    color: #000;
+  }
+
+  .main-slider .slick-dots {
+    bottom: -40px;
+    padding-left: 0;
+  }
+
+  .main-slider .slick-dots li button {
+    background-color: #000;
   }
 }
 

@@ -114,18 +114,32 @@
     .slide{
       padding: 0;
       height: inherit;
-      .left-side{
-        height: inherit;
-        &:before{
-          top: inherit;
-          transform: none;
-        }
+      &:before{
+        content: none;
       }
       .content{
         position: relative;
         left: 0;
         top: inherit;
         transform: none;
+        width: 100%;
+        padding-top: 15px;
+        .title{
+          font-size: 28px;
+          color: #000;
+        }
+        .description{
+          color: #000;
+        }
+      }
+    }
+    .slick-dots{
+      bottom: -40px;
+      padding-left: 0;
+      li{
+        button{
+          background-color: #000;
+        }
       }
     }
   }

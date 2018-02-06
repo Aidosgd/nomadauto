@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Ibec\Content\Post;
 use Illuminate\Support\ServiceProvider;
 use Ibec\Menu\Database\Menu;
 use Illuminate\View\Factory;
@@ -23,8 +24,12 @@ class AppServiceProvider extends ServiceProvider
             ->get()
             ->toHierarchy();
 
-        $view->composer(['parts.header'], function($view) use($main_menu){
-    			$view->with(compact('main_menu'));
+        $footer = Post::whereHas('nodes', function($q){
+            $q->where('slug', 'footer');
+        })->first();
+
+        $view->composer(['*'], function($view) use($main_menu, $footer){
+    			$view->with(compact('main_menu', 'footer'));
     		});
 
     }
